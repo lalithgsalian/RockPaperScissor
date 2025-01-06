@@ -1,0 +1,161 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-image: url(yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg);
+    background-size: cover;
+}
+
+/* Main Title */
+h1 {
+    height: 5rem;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+/* Game Options */
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.option {
+    border: 4px solid #444;
+    border-radius: 50%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.option:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 10px rgba(255, 0, 0, 0.5);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+}
+
+/* Scorecard */
+.score-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 20px 0;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.score p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.score p:last-child {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #777;
+}
+
+/* Message Box */
+.msg-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.msg-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Reset Button */
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rst-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rst-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    h1{
+        height: auto;
+        width: auto;
+        line-height:50px;
+    }
+    .main {
+        flex-direction: column;
+    }
+
+    .option {
+        margin: 10px;
+    }
+
+    .score-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .msg-box p {
+        font-size: 1.2rem;
+    }
+
+    .rst-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
